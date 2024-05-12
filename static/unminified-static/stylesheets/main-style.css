@@ -1,5 +1,6 @@
 :root {
     /* Colors */
+    --themeBackground: 251, 229, 220;
     --themePrimary: 89, 34, 63;
     --themeLighterAlt: 48, 242, 245;
     --themeLighter: 228, 206, 218;
@@ -20,8 +21,7 @@
     --neutralPrimaryAlt: 59, 58, 57;
     --neutralPrimary: 50, 49, 48;
     --neutralDark: 32, 31, 30;
-    --pageBackgroundColor: 251, 229, 220;
-    --ctaBtnPrimary: 184, 226, 141;
+    --ctaBtnPrimary: 237, 102, 99;
     --ctaBtnSecondary: 29, 114, 114;
 
 }
@@ -29,16 +29,53 @@
 /* Universal Page Styling */
 
 body {
-    background: rgb(var(--pageBackgroundColor));
+    background: rgb(var(--themeBackground));
 }
 
 /* Navigation Styling */
 
-.testing {
-    height: 200vh;
-}
-
 .header.bg-color,
 .footer.bg-color {
     background-color: rgb(var(--themeDarker));
+}
+
+/* Temporary Styling */
+
+.testing {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.color-palette-container {
+    border: 1px solid;
+    width: 80%;
+    height: 60%;
+    display: flex;
+}
+
+.color {
+    width: 20%;
+    height: 100%;
+}
+
+.color.primary-color {
+    background: rgb(var(--themePrimary));
+}
+
+.color.secondary-color {
+    background: rgb(var(--themeSecondary));
+}
+
+.color.cta-color-primary {
+    background: rgb(var(--themeTertiary));
+}
+
+.color.background-color {
+    background: rgb(var(--themeBackground));
+}
+
+.color.cta-color-secondary {
+    background: rgba(var(--ctaBtnPrimary), .5);
 }
