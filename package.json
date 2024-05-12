@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/zmthall/GGM_Website#readme",
   "dependencies": {
+    "bootstrap-icons": "^1.11.3",
     "csso": "^5.0.5",
     "dotenv": "^16.4.5",
     "ejs": "^3.1.9",
